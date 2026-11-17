@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lonsdale Tyres and Mechanical Services</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=Barlow+Condensed:wght@600;700&family=Manrope:wght@500;600;700;800&display=swap">
+<style>
+/* ===== STYLES: do not edit unless you know CSS. Template colours/fonts are the [data-t] blocks. ===== */
+*{box-sizing:border-box}
+body{margin:0}
+#root{min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);font-family:var(--fb);-webkit-font-smoothing:antialiased}
+[data-t=a]{--bg:#f7f6f3;--ink:#0b0b0f;--mut:#5b5b66;--card:#fff;--line:#cfcdc6;--acc:#ffd23f;--onacc:#0b0b0f;--panel:#0b0b0f;--onpanel:#fff;--btn:#0b0b0f;--onbtn:#fff;--r:28px;--r2:36px;--pr:999px;--fh:'Inter Tight',sans-serif;--fb:'Inter Tight',sans-serif;--tt:none;--fe:'Instrument Serif',Georgia,serif;--fs:italic;--fw:400;--emc:inherit}
+[data-t=b]{--bg:#0b0b0f;--ink:#f4f4f6;--mut:#a6a6b3;--card:#17171d;--line:#2e2e38;--acc:#ffe600;--onacc:#0b0b0f;--panel:#17171d;--onpanel:#fff;--btn:#ffe600;--onbtn:#0b0b0f;--r:4px;--r2:6px;--pr:3px;--fh:'Barlow Condensed',sans-serif;--fb:'Inter Tight',sans-serif;--tt:uppercase;--fe:inherit;--fs:normal;--fw:inherit;--emc:#ffe600}
+[data-t=c]{--bg:#f1f5fb;--ink:#0a2540;--mut:#4b5f78;--card:#fff;--line:#cdd8e6;--acc:#4da3ff;--onacc:#0a2540;--panel:#0a2540;--onpanel:#fff;--btn:#1560d4;--onbtn:#fff;--r:16px;--r2:24px;--pr:12px;--fh:'Manrope',sans-serif;--fb:'Manrope',sans-serif;--tt:none;--fe:inherit;--fs:normal;--fw:inherit;--emc:#1560d4}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.035em;font-family:var(--fh);text-transform:var(--tt)}
+em{font-family:var(--fe);font-style:var(--fs);font-weight:var(--fw);color:var(--emc)}
+p{margin:0}a{color:inherit;text-decoration:none}button{font-family:inherit;cursor:pointer}
+.w{max-width:1280px;width:100%;margin:0 auto;padding:0 32px}
+.sec{padding-top:96px}
+.h2{font-size:clamp(36px,5vw,64px);line-height:1.02}
+.mut{color:var(--mut)}
+.eb{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border:0;border-radius:var(--pr);background:var(--btn);color:var(--onbtn);font-size:16px;font-weight:500;transition:transform .15s}
+.pill:hover{transform:translateY(-1px)}.pill.o{background:transparent;color:inherit;border:1.5px solid currentColor}
+.sm{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);font-weight:500;font-size:15px}.sm.on{background:var(--btn);color:var(--onbtn)}.sm.d{border-color:#b42318;color:#b42318}
+.nav{min-height:44px;padding:0 14px;background:none;border:0;border-radius:999px;color:var(--ink);font-size:15px;font-weight:500}.nav:hover,.nav.on{background:rgba(127,127,127,.18)}
+.card{background:var(--card);border-radius:var(--r)}
+.fld{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:500}
+.fld input,.fld textarea,.fld select{min-height:52px;width:100%;padding:12px 16px;border:1.5px solid var(--line);border-radius:14px;font:inherit;font-size:16px;color:var(--ink);background:var(--card)}
+.fld textarea{min-height:120px;resize:vertical}.fld input:focus,.fld textarea:focus,.fld select:focus{outline:2px solid var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.row{display:flex;flex-wrap:wrap;gap:16px 48px;padding:32px 0;border-top:1.5px solid var(--line)}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);font:inherit;font-weight:500;font-size:15px;background:var(--card);color:var(--ink)}.chip.on{background:var(--btn);color:var(--onbtn)}
+.bar{background:#000;padding:22px 24px;border-bottom:4px solid #ffd23f;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif}
+.bar span{color:#fff;font-size:17px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.bar button{min-height:60px;min-width:180px;padding:0 40px;border-radius:999px;border:2.5px solid #ffd23f;background:transparent;color:#fff;font-weight:700;font-size:20px;font-family:inherit}
+.bar button.on{background:#ffd23f;color:#000;box-shadow:0 0 0 4px rgba(255,210,63,.3)}.bar button.g{background:#fff;color:#000;border-color:#fff;min-width:0;padding:0 28px;font-size:18px}
+.mq{overflow:hidden;white-space:nowrap;background:var(--acc);color:var(--onacc)}
+.mqt{display:inline-block;padding:16px 0;font-family:var(--fh);font-weight:700;text-transform:uppercase;font-size:26px;animation:mq 30s linear infinite}.mq:hover .mqt{animation-play-state:paused}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;padding:20px;font-family:'Inter Tight',sans-serif}
+.mb{background:#fff;color:#0b0b0f;border-radius:24px;width:100%;max-width:580px;max-height:92vh;overflow:auto;padding:28px;display:flex;flex-direction:column;gap:18px}
+.mb h2{font-size:34px;line-height:1.05;text-transform:none;font-family:'Inter Tight',sans-serif}
+.pt{display:flex;gap:12px;align-items:center;background:#f3f2ee;border-radius:14px;padding:14px 16px;font-weight:500}
+.fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:40;min-height:56px;padding:0 30px;box-shadow:0 12px 32px rgba(0,0,0,.3)}
+.rv{animation:fu .8s both}@supports (animation-timeline:view()){.rv{animation:fu linear both;animation-timeline:view();animation-range:entry 0% entry 60%}}
+.lift{transition:transform .25s,box-shadow .25s}.lift:hover{transform:translateY(-6px)}[data-t=b] .lift:hover{box-shadow:0 0 0 2px var(--acc),0 0 44px rgba(255,230,0,.22)}[data-t=c] .card{box-shadow:0 10px 40px rgba(10,37,64,.08)}
+.tile{transition:transform .5s}.tile:hover{transform:scale(1.03)}
+.pulse{animation:pulse 2.4s ease-in-out infinite}.float{animation:fl 5s ease-in-out infinite}
+.sweep{transform-origin:200px 180px;animation:sweep 6s linear infinite}.ping,.blip{transform-box:fill-box;transform-origin:center}.ping{animation:pingk 2.6s ease-out infinite}.blip{animation:blipk 2.4s ease-in-out infinite}
+@keyframes fu{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.08);opacity:1}}@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes sweep{to{transform:rotate(360deg)}}@keyframes pingk{from{transform:scale(.4);opacity:.8}to{transform:scale(2.4);opacity:0}}@keyframes blipk{50%{transform:scale(1.35)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+/* =====================================================================
+   EDIT ME: CONTENT. Change text between the quote marks only.
+   [SQUARE BRACKETS] = placeholder to replace. Save, then re-upload this file.
+   ===================================================================== */
+
+// DEMO_MODE true  = shows template switcher, guide pop-up and demo editing tool (for prospects).
+// DEMO_MODE false = clean client site: one template, none of the demo extras.
+const DEMO_MODE = true;
+const DEFAULT_TEMPLATE = 'a';          // 'a' Studio, 'b' Sharp, 'c' Trusted
+const FORM_ENDPOINT = '';              // Paste your Formspree URL here so quote requests reach your email
+// Link to your own site (used for credits and the terms page)
+const MECHELAB_URL = 'https://mrvending.github.io/mechelab/';
+const SHOW_CREDIT = true;              // true shows a small "Website by MecheLab" link in the footer
+const PREVIEW_LABEL = 'PREVIEW: Choose your template';
+const PRIVACY_NOTE = 'We’ll only use your details to reply to this enquiry. We won’t add you to a newsletter.';
+
+// Business details shown on the website
+const SITE = {
+  name: 'Lonsdale Tyres and Mechanical Services', tagline: 'Tyres & mechanical · Mitchell, ACT',
+  headline: 'Tyres fitted. Cars fixed. Back on the road.',
+  heroText: 'Tyre supply and fitting, wheel balancing and mechanical repairs for family cars, vans and 4WDs.',
+  cta: 'Get a free quote', servicesIntro: 'Honest advice, quality work and clear pricing, for every kind of vehicle.',
+  aboutTitle: 'Local tyres and mechanical, done properly.',
+  aboutText: 'Lonsdale Tyres and Mechanical Services is based in Mitchell, ACT, and helps with all your automotive needs, from a family car or van to a 4WD or street machine. [ADD YOUR STORY: who you are, how long you’ve been in the trade and what customers can expect.]',
+  aboutPoints: ['Tyres stocked from 16 to 20 inch', 'Other sizes usually sourced within days', 'Upfront, written quotes'],
+  areas: 'Mitchell, Gungahlin, Watson, Dickson, Braddon',   // first name is the centre of the map
+  phone: '(02) 6248 8060', email: 'info@lonsdaletyres.com.au', address: 'Unit 9, 13-15 Brookes Street, Mitchell ACT 2911', hours: 'Mon–Fri 8:00am–5:30pm [CONFIRM]', licence: '[LICENCE NO.]',
+  facebook: 'https://www.facebook.com/', instagram: 'https://www.instagram.com/', linkedin: 'https://www.linkedin.com/', google: 'https://www.google.com/business/',
+  bizName: 'MecheLab', bizEmail: '[YOUR EMAIL]', payid: '[YOUR PAYID]',
+  metrics: [['[00]+', 'Years in the trade'], ['[000]+', 'Vehicles serviced'], ['[00]%', 'Customers who recommend us']],
+  services: [
+    ['Tyre Supply & Fitting', 'A wide range of tyres for cars, vans and 4WDs, fitted properly.'],
+    ['Wheel Balancing', 'Computer balancing so your tyres wear evenly and the ride stays smooth.'],
+    ['General Mechanical Repairs', 'Diagnosis and repair for everyday faults, explained in plain English.'],
+    ['Logbook Servicing', 'Scheduled servicing to keep your vehicle running well. [CONFIRM warranty wording.]'],
+    ['Brakes & Suspension', 'Inspections and repairs so your vehicle stops and handles safely.'],
+    ['Safety & Pre-purchase Checks', 'A thorough check before you buy, or before your next rego.']],
+  gallery: [['New tyre fitting', 'Tyres'], ['Wheel balancing', 'Balancing'], ['Brake service', 'Brakes'], ['Logbook service', 'Servicing']],
+  reviews: [['[Customer testimonial goes here.]', '[Customer name], [Suburb]'], ['[Customer testimonial goes here.]', '[Customer name], [Suburb]']]
+};
+
+// Pricing in the "Guide & pricing" pop-up (demo only)
+const OFFER = {
+  site: { name: 'Your website', price: '$500', note: 'One-off fee. Includes:', items: ['Your chosen design, built with your content', 'Home, Services, About and Quote form', 'Domain name for 12 months', 'Up to 5 pages, built for mobile', 'Simple how-to guide for your site', 'Up to 2 revisions'] },
+  extras: [['Smart-search chatbot', 'Answers common questions on your site', '$200', 'one-off'], ['Custom Elements', 'Bespoke features built for your business', '$200', 'one-off'], ['Online payment link', 'A Pay button linking to your own PayPal, Stripe or Square page', '$200', 'one-off'], ['Monthly maintenance', 'Updates and support', '$20', '/ month'], ['Something else?', 'Tell me what you need', 'Quoted', 'on request']],
+  notes: ['Up to 2 rounds of revisions are included before launch.', 'Not included: ecommerce, complex bookings, apps, integrations, logo design, ongoing SEO, email and IT support. Extra work is quoted first.', 'No lock-in. No guarantees on rankings, traffic or sales.'],
+  next: 'Like what you see? Reply to my email and I’ll send a written quote. No obligation.'
+};
+
+// Guide pop-up steps (pricing is the final step, from OFFER above)
+const TOUR = [
+  ['Take a look around', 'This is a sample website for a local trade business. Have a look around, then see what it costs.', ['Switch between 3 designs with the buttons at the top', 'Scroll the page: services, about and service area', 'Try the quote form on the Contact page']],
+  ['How it works', 'Three simple steps from hello to live.', ['1. Say yes: we agree your scope and quote', '2. Make it yours: you send your logo, photos and details', '3. Review and launch: up to 2 revision rounds, then live']],
+  ['Making changes', 'Once you’ve bought your site, you can update it yourself or ask me to do it.', ['Do it yourself: edit your text in one clearly labelled section of your site file', 'Or ask me: up to 2 revisions before launch, then maintenance ($20/month) or a quote', 'The “Demo Editing tool” link in the menu is a preview only and isn’t part of your finished site']]
+];
+
+// Questions shown on the FAQs & terms page
+const FAQ = [
+  ['Do I own my website?', 'You own your content and your domain. [CONFIRM which files you hand over.] MecheLab keeps the underlying template and may reuse it for other clients.'],
+  ['What are the ongoing costs?', 'The $500 covers the build and your domain for 12 months. After that, domain renewal is [CONFIRM]. Monthly maintenance is optional at $20 per month. There is no lock-in.'],
+  ['How long will it take?', 'We agree a delivery date once your quote is accepted and we have your logo, photos and details.'],
+  ['Will this guarantee more enquiries?', 'No. We build a clear, professional site that makes it easy for visitors to contact you. Rankings, traffic and enquiry numbers are not guaranteed.'],
+  ['What if I need more than 5 pages?', 'Extra pages and features are quoted before we start.'],
+  ['What happens after launch?', 'You get a handover and a how-to guide. Changes beyond your 2 revisions are quoted first. Your rights under the Australian Consumer Law are unaffected.']
+];
+
+// Terms and conditions (draft, not legal advice: have them reviewed)
+const TERMS = (c) => [
+  ['Who we are', c.bizName + '. Contact: ' + c.bizEmail + '.'],
+  ['Quotes and agreement', 'Work begins once you accept a written quote or agreement. Quotes are valid for [14] days. All prices are in AUD [and include/exclude GST: CONFIRM].'],
+  ['What is included', 'Website: $500 one-off, covering your chosen design built with your content (Home, Services, About and Quote form), a domain name for 12 months, up to 5 pages, a how-to guide and up to 2 revisions. Add-ons: $200 each, one-off. Monthly maintenance: $20 per month. Other add-ons are quoted separately.'],
+  ['Payment', 'Pay by PayID to ' + c.payid + ' using the reference on your quote. [CONFIRM: the one-off fee is due before the site goes live.] Maintenance is paid monthly in advance. [CONFIRM refund policy.]'],
+  ['Not included', 'Ecommerce, complex bookings, apps, integrations, logo design, ongoing SEO, and email or IT support are outside this package. Extra work is quoted before we start.'],
+  ['Your content', 'You supply text, logos, photos and licence details, and confirm you have the right to use them and that they are accurate.'],
+  ['Domain and hosting', 'Your domain is registered in your name. It is included for 12 months; after that, renewal is [at cost / CONFIRM fee]. [CONFIRM hosting terms.]'],
+  ['Revisions', 'Up to 2 rounds of revisions are included before launch. Extra work is quoted first.'],
+  ['Ownership', 'You own your content and domain. ' + c.bizName + ' keeps the underlying template and code and may reuse them for other clients.'],
+  ['Maintenance', 'Covers [CONFIRM: e.g. small text and image updates]. Cancel with 30 days’ notice.'],
+  ['Liability', 'We take reasonable care but cannot guarantee search rankings or enquiry numbers. Liability is limited to fees paid, to the extent the law allows. Nothing excludes your rights under the Australian Consumer Law.'],
+  ['Governing law', 'These terms are governed by the laws of the Australian Capital Territory.']];
+
+/* =====================================================================
+   DO NOT EDIT BELOW: page logic
+   ===================================================================== */
+const esc = (t) => String(t == null ? '' : t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const TILES = ['linear-gradient(135deg,#ffd23f,#ff9f1c)', 'linear-gradient(135deg,#1c1c24,#4a4a58)', 'linear-gradient(135deg,#dfe7f5,#9db4e0)', 'linear-gradient(135deg,#f3e3cf,#d9b48a)', 'linear-gradient(135deg,#e5f0e3,#9fc79a)'];
+let cfg = JSON.parse(JSON.stringify(SITE));
+if (DEMO_MODE) { try { Object.assign(cfg, JSON.parse(localStorage.getItem('ml_cfg_v2') || '{}')); } catch (e) {} }   // saved demo edits
+const save = () => { if (DEMO_MODE) try { localStorage.setItem('ml_cfg_v2', JSON.stringify(cfg)); } catch (e) {} };
+const S = { tpl: DEFAULT_TEMPLATE, view: 'home', tour: DEMO_MODE ? 1 : 0, open: 0, tab: 'content', sent: false, err: false, form: { name: '', phone: '', email: '', service: '', msg: '' } };
+const raw = (p) => String(p).replace(/[^0-9+]/g, '');
+const eml = (t, s) => (s ? `<em>${t}</em>` : t);
+
+/* ---------- small building blocks ---------- */
+const btns = () => `<div style="display:flex;flex-wrap:wrap;gap:12px"><button class="pill" data-a="go" data-v="contact">${esc(cfg.cta)}</button><button class="pill o" data-a="jump" data-v="services">Explore services</button></div>`;
+const socials = () => [['Facebook', cfg.facebook], ['Instagram', cfg.instagram], ['LinkedIn', cfg.linkedin], ['Google', cfg.google]].filter((x) => x[1]).map((x) => `<a class="pill o" style="min-height:44px;padding:0 20px;font-size:15px" href="${esc(x[1])}" target="_blank" rel="noopener">${x[0]}</a>`).join('');
+const heroA = () => `<div class="w" style="padding-top:56px;padding-bottom:40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px"><div class="card" style="display:inline-flex;gap:10px;align-items:center;border-radius:999px;padding:8px 18px;font-size:14px;font-weight:500"><span style="width:8px;height:8px;border-radius:50%;background:var(--acc);outline:2px solid var(--ink)"></span>${esc(cfg.tagline)}</div><h1 style="font-size:clamp(44px,8.4vw,112px);line-height:.98;max-width:1000px">${esc(cfg.headline)}</h1><p class="mut" style="font-size:clamp(17px,1.6vw,21px);line-height:1.55;max-width:640px">${esc(cfg.heroText)}</p>${btns()}</div>
+<div class="w" style="padding-top:16px"><div style="background:var(--panel);color:var(--onpanel);border-radius:var(--r2);padding:clamp(28px,5vw,64px);display:flex;flex-wrap:wrap;gap:40px;align-items:center"><div style="flex:1 1 320px;display:flex;flex-direction:column;gap:36px">${cfg.metrics.map((m) => `<div style="display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #2a2a33;padding-bottom:20px"><div style="font-size:clamp(40px,5vw,64px);font-weight:600;letter-spacing:-.04em;color:var(--acc);min-width:150px">${esc(m[0])}</div><div style="color:#c9c9d1;font-size:17px">${esc(m[1])}</div></div>`).join('')}</div><div style="flex:1 1 280px;display:flex;justify-content:center" aria-hidden="true"><svg viewBox="0 0 320 320" width="100%" style="max-width:340px"><circle cx="160" cy="160" r="150" fill="none" stroke="#2a2a33"/><circle cx="160" cy="160" r="110" fill="none" stroke="#2a2a33"/><circle cx="160" cy="160" r="70" fill="#15151b" stroke="#2a2a33"/><circle cx="160" cy="160" r="46" fill="none" stroke="var(--acc)" stroke-width="18"/><circle cx="160" cy="160" r="12" fill="var(--acc)"/></svg></div></div></div>`;
+const heroB = () => { const t = cfg.services.map((s) => s[0]).join('  /  ') + '  /  '; return `<div style="overflow:hidden;position:relative;border-bottom:4px solid var(--acc)"><svg class="pulse" aria-hidden="true" viewBox="0 0 100 140" style="position:absolute;right:4%;top:40px;width:clamp(120px,22vw,320px);opacity:.9"><circle cx="50" cy="70" r="46" fill="none" stroke="var(--acc)" stroke-width="14"/><circle cx="50" cy="70" r="12" fill="var(--acc)"/></svg><div class="w" style="padding-top:80px;padding-bottom:64px;position:relative;display:flex;flex-direction:column;gap:24px"><div class="eb" style="color:var(--acc)">${esc(cfg.tagline)}</div><h1 style="font-size:clamp(60px,12vw,176px);line-height:.86;max-width:900px">${esc(cfg.headline)}</h1><p class="mut" style="font-size:20px;line-height:1.5;max-width:560px">${esc(cfg.heroText)}</p>${btns()}</div><div class="mq"><div class="mqt">${esc(t + t)}</div></div></div>
+<div class="w" style="padding-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">${cfg.metrics.map((m) => `<div class="card" style="padding:28px"><div style="font-size:56px;font-weight:700;color:var(--acc);font-family:var(--fh)">${esc(m[0])}</div><div class="mut">${esc(m[1])}</div></div>`).join('')}</div>`; };
+const heroC = () => `<div style="background:linear-gradient(160deg,#cfe2fb 0%,var(--bg) 62%)"><div class="w" style="padding-top:72px;padding-bottom:72px;display:flex;flex-wrap:wrap;gap:48px;align-items:center"><div style="flex:1 1 440px;display:flex;flex-direction:column;gap:24px"><div class="card" style="align-self:flex-start;border-radius:999px;padding:8px 18px;font-size:14px;font-weight:600;color:var(--btn)">${esc(cfg.tagline)}</div><h1 style="font-size:clamp(40px,5.6vw,76px);line-height:1.04">${esc(cfg.headline)}</h1><p class="mut" style="font-size:19px;line-height:1.6;max-width:560px">${esc(cfg.heroText)}</p>${btns()}</div><div class="card float" style="flex:1 1 340px;padding:32px;display:flex;flex-direction:column;gap:18px;box-shadow:0 30px 80px rgba(10,37,64,.16)"><h3 style="font-size:26px">Start your quote</h3><p class="mut">What do you need done? Pick one and we’ll carry it across.</p><div style="display:flex;flex-wrap:wrap;gap:8px">${cfg.services.map((s) => `<button class="chip ${S.form.service === s[0] ? 'on' : ''}" data-a="pick" data-v="${esc(s[0])}">${esc(s[0])}</button>`).join('')}</div><button class="pill" data-a="go" data-v="contact">Continue</button></div></div></div>
+<div class="w" style="padding-top:16px;display:flex;flex-wrap:wrap;gap:16px">${cfg.metrics.map((m) => `<div class="card" style="flex:1 1 220px;padding:24px"><div style="font-size:44px;font-weight:800;color:var(--btn)">${esc(m[0])}</div><div class="mut">${esc(m[1])}</div></div>`).join('')}</div>`;
+
+const areaSvg = () => {
+  const a = cfg.areas.split(',').map((x) => x.trim()).filter(Boolean), d = a.slice(1, 7);
+  const dots = d.map((n, i) => { const g = (-90 + i * (360 / d.length)) * Math.PI / 180, r = i % 2 ? 150 : 105, x = Math.round(200 + r * Math.cos(g)), y = Math.round(180 + r * Math.sin(g));
+    return `<line x1="200" y1="180" x2="${x}" y2="${y}" stroke="var(--line)"/><circle class="blip" style="animation-delay:${i * .7}s" cx="${x}" cy="${y}" r="9" fill="var(--acc)" stroke="var(--ink)" stroke-width="3"/><text x="${x}" y="${y + 32}" text-anchor="middle" font-size="24" font-weight="600" fill="var(--ink)">${esc(n)}</text>`; }).join('');
+  return `<svg viewBox="-40 0 480 360" role="img" aria-label="Service area map" style="width:100%;max-width:260px;height:auto"><circle cx="200" cy="180" r="150" fill="none" stroke="var(--line)" stroke-dasharray="4 6"/><circle cx="200" cy="180" r="105" fill="none" stroke="var(--line)" stroke-dasharray="4 6"/><circle cx="200" cy="180" r="60" fill="none" stroke="var(--line)"/><g class="sweep"><path d="M200 180 L200 30 A150 150 0 0 1 323 94 Z" fill="var(--acc)" opacity=".28"/></g>${dots}<circle class="ping" cx="200" cy="180" r="40" fill="none" stroke="var(--acc)" stroke-width="5"/><circle cx="200" cy="180" r="16" fill="var(--acc)" stroke="var(--ink)" stroke-width="3"/><text x="200" y="228" text-anchor="middle" font-size="26" font-weight="700" fill="var(--ink)">${esc(a[0] || '')}</text></svg>`;
+};
+
+/* ---------- pages ---------- */
+const home = () => `${S.tpl === 'b' ? heroB() : S.tpl === 'c' ? heroC() : heroA()}
+<div id="services" class="w sec"><div class="eb">Services</div><h2 class="h2" style="margin:12px 0;max-width:760px">What we ${eml('fit, fix', 1)} and service.</h2><p class="mut" style="font-size:19px;line-height:1.6;max-width:640px;margin-bottom:24px">${esc(cfg.servicesIntro)}</p>
+${cfg.services.map((s, i) => `<div class="row"><button data-a="toggle" data-v="${i}" aria-expanded="${S.open === i}" style="flex:1 1 280px;display:flex;justify-content:space-between;gap:16px;align-items:center;background:none;border:0;padding:0;color:inherit;text-align:left"><h3 style="font-size:clamp(28px,3.4vw,44px);line-height:1.05">${esc(s[0])}</h3><span style="font-size:36px;font-weight:300">${S.open === i ? '–' : '+'}</span></button>${S.open === i ? `<p class="mut rv" style="flex:1 1 320px;font-size:18px;line-height:1.6">${esc(s[1])}</p>` : ''}</div>`).join('')}<div style="border-top:1.5px solid var(--line)"></div></div>
+<div id="about" class="w sec" style="padding-bottom:0;display:flex;flex-wrap:wrap;gap:40px;align-items:stretch"><div style="flex:1 1 420px;display:flex;flex-direction:column;gap:20px"><div class="eb">About us</div><h2 class="h2">${esc(cfg.aboutTitle)}</h2><p class="mut" style="font-size:19px;line-height:1.65;max-width:560px">${esc(cfg.aboutText)}</p><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px">${socials()}</div></div>
+<div style="flex:1 1 360px;display:flex;flex-direction:column;gap:16px"><div class="card rv" style="padding:36px;display:flex;flex-direction:column;gap:22px;justify-content:center">${cfg.aboutPoints.map((p) => `<div style="display:flex;gap:16px;align-items:center;font-size:20px;font-weight:500"><span aria-hidden="true" style="flex:0 0 36px;height:36px;border-radius:50%;background:var(--acc);color:var(--onacc);display:flex;align-items:center;justify-content:center;font-weight:700">✓</span>${esc(p)}</div>`).join('')}</div><div class="card rv" style="padding:20px;display:flex;flex-direction:column;align-items:center;gap:2px"><div class="eb" style="align-self:flex-start">Service area</div>${areaSvg()}</div></div></div>
+<div class="w sec" style="padding-bottom:0"><div class="eb">Selected work</div><h2 class="h2" style="margin:12px 0 40px">Recent ${eml('projects', 1)}</h2><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">${cfg.gallery.map((g, i) => `<div class="rv" style="display:flex;flex-direction:column;gap:14px"><div class="tile" style="height:300px;border-radius:var(--r);padding:18px;background:${TILES[i % 5]}"><span style="background:rgba(255,255,255,.92);color:#0b0b0f;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px">${esc(g[1])}</span></div><div style="font-size:18px;font-weight:500;padding:0 6px">${esc(g[0])}</div></div>`).join('')}</div></div>
+<div class="w sec" style="padding-bottom:0"><div class="eb">Testimonials</div><h2 class="h2" style="margin:12px 0 40px">Kind words from ${eml('clients', 1)}</h2><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">${cfg.reviews.map((r) => `<figure class="card rv lift" style="margin:0;padding:36px;display:flex;flex-direction:column;gap:28px"><blockquote style="margin:0;font-size:22px;line-height:1.45">${esc(r[0])}</blockquote><figcaption class="mut" style="font-weight:500">${esc(r[1])}</figcaption></figure>`).join('')}</div></div>
+<div class="w" style="padding-top:72px;padding-bottom:88px"><div style="background:var(--acc);color:var(--onacc);--emc:var(--onacc);border-radius:var(--r2);padding:clamp(32px,6vw,80px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between"><h2 class="h2" style="line-height:1;max-width:640px">Need a hand with your car? ${eml('Let’s talk.', 1)}</h2><button class="pill" style="background:var(--onacc);color:var(--acc)" data-a="go" data-v="contact">${esc(cfg.cta)}</button></div></div>`;
+
+const fld = (k, l, v, t) => `<label class="fld" ${t === 'wide' ? 'style="grid-column:1/-1"' : ''}>${l}<input data-k="${k}" value="${esc(v)}"></label>`;
+const contact = () => `<div class="w" style="padding-top:64px;padding-bottom:32px"><div class="eb">Contact</div><h1 style="font-size:clamp(44px,7.5vw,96px);line-height:.98;margin-top:20px">Request a ${eml('quote.', 1)}</h1></div>
+<div class="w" style="padding-bottom:88px;display:flex;flex-wrap:wrap;gap:16px;align-items:stretch"><div class="card" style="flex:999 1 480px;min-width:0;padding:clamp(24px,4vw,48px)">${S.sent ? `<div role="status" style="display:flex;flex-direction:column;gap:16px"><h2 style="font-size:44px;line-height:1.05">Thanks, your request is ${eml('in.', 1)}</h2><p class="mut" style="font-size:18px;line-height:1.6">We’ll be in touch using the details you provided. For anything urgent, call ${esc(cfg.phone)}.</p><div><button class="pill o" data-a="again">Send another request</button></div></div>` :
+`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px"><label class="fld">Name<input data-fm="name" value="${esc(S.form.name)}" autocomplete="name"></label><label class="fld">Phone<input data-fm="phone" value="${esc(S.form.phone)}" autocomplete="tel"></label><label class="fld">Email<input data-fm="email" value="${esc(S.form.email)}" autocomplete="email"></label><label class="fld">Service<select data-fm="service"><option value="">Select a service</option>${cfg.services.map((s) => `<option ${S.form.service === s[0] ? 'selected' : ''}>${esc(s[0])}</option>`).join('')}</select></label><label class="fld" style="grid-column:1/-1">Tell us about the job<textarea data-fm="msg">${esc(S.form.msg)}</textarea></label></div>${S.err ? '<p role="alert" style="color:#b42318;font-weight:600;margin-top:16px">Please add your name and a phone number so we can reach you.</p>' : ''}<div style="margin-top:24px"><button class="pill" data-a="submit">Send quote request</button></div><p class="mut" style="margin-top:16px;font-size:14px">${esc(PRIVACY_NOTE)}</p>`}</div>
+<div style="flex:1 1 300px;background:var(--panel);color:var(--onpanel);--emc:var(--acc);border-radius:var(--r);padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:24px"><h2 style="font-size:34px">Get in ${eml('touch', 1)}</h2>${[['PHONE', `<a href="tel:${raw(cfg.phone)}" style="font-size:22px;font-weight:500">${esc(cfg.phone)}</a>`], ['EMAIL', esc(cfg.email)], ['LOCATION', esc(cfg.address)], ['HOURS', esc(cfg.hours)], ['LICENCE', esc(cfg.licence)], ['FOLLOW US', `<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">${socials()}</div>`]].map((x) => `<div><div style="color:var(--acc);font-size:12px;font-weight:600;letter-spacing:.12em">${x[0]}</div><span style="font-size:18px">${x[1]}</span></div>`).join('')}</div></div>`;
+
+const terms = () => `<div class="w" style="max-width:820px;padding-top:64px;padding-bottom:72px;display:flex;flex-direction:column;gap:28px"><div style="display:flex;flex-direction:column;gap:12px"><div class="eb">Legal</div><h1 style="font-size:clamp(40px,6vw,72px);line-height:1">FAQs &amp; ${eml('terms', 1)}</h1><p class="mut">Frequently asked questions, followed by the terms and conditions for services provided by <a href="${MECHELAB_URL}" target="_blank" rel="noopener" style="text-decoration:underline">${esc(cfg.bizName)}</a>.</p></div>
+<h2 style="font-size:36px">Frequently asked ${eml('questions', 1)}</h2>${FAQ.map((q) => `<div class="row" style="padding:20px 0 0;gap:8px 40px"><h3 style="flex:1 1 200px;font-size:20px">${q[0]}</h3><p class="mut" style="flex:3 1 360px;line-height:1.65">${q[1]}</p></div>`).join('')}
+<h2 style="font-size:36px;margin-top:24px">${esc(cfg.bizName)} terms &amp; ${eml('conditions', 1)}</h2>${TERMS(cfg).map((t) => `<div class="row" style="padding:20px 0 0;gap:8px 40px"><h3 style="flex:1 1 200px;font-size:22px">${t[0]}</h3><p class="mut" style="flex:3 1 360px;line-height:1.65">${esc(t[1])}</p></div>`).join('')}
+<p class="mut" style="font-size:13px">These are draft terms and not legal advice. Have them reviewed before relying on them.</p><div><button class="pill o" data-a="go" data-v="home">Back to home</button></div></div>`;
+
+const admin = () => {
+  const F = [['name', 'Business name'], ['tagline', 'Tagline'], ['headline', 'Headline', 'wide'], ['heroText', 'Hero text', 'wide'], ['cta', 'Call-to-action label'], ['servicesIntro', 'Services intro'], ['aboutTitle', 'About headline', 'wide'], ['aboutText', 'About text', 'wide'], ['areas', 'Service area suburbs (comma separated, first is the centre)', 'wide'], ['phone', 'Phone'], ['email', 'Email'], ['address', 'Location'], ['hours', 'Opening hours'], ['licence', 'Licence number'], ['facebook', 'Facebook URL'], ['instagram', 'Instagram URL'], ['linkedin', 'LinkedIn URL'], ['google', 'Google Business URL'], ['bizName', 'Terms: business name'], ['bizEmail', 'Terms: email'], ['payid', 'Terms: PayID']];
+  const list = (key, labels) => `<div style="display:flex;flex-direction:column;gap:12px">${cfg[key].map((r, i) => `<div class="card" style="padding:20px;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end">${labels.map((l, j) => `<label class="fld" style="flex:${j ? 3 : 2} 1 240px">${l}<input data-k="${key}.${i}.${j}" value="${esc(r[j])}"></label>`).join('')}<button class="sm d" data-a="del" data-v="${key}.${i}">Remove</button></div>`).join('')}<div><button class="pill" data-a="add" data-v="${key}">Add</button></div></div>`;
+  const body = S.tab === 'content' ? `<div class="card" style="padding:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">${F.map((f) => fld(f[0], f[1], cfg[f[0]], f[2])).join('')}${cfg.metrics.map((m, i) => fld(`metrics.${i}.0`, 'Metric value', m[0]) + fld(`metrics.${i}.1`, 'Metric label', m[1])).join('')}${cfg.aboutPoints.map((p, i) => fld(`aboutPoints.${i}`, 'About point', p)).join('')}</div>` : S.tab === 'services' ? list('services', ['Title', 'Description']) : S.tab === 'gallery' ? list('gallery', ['Project title', 'Tag']) : list('reviews', ['Testimonial', 'Client']);
+  return `<div class="w" style="padding-top:40px;padding-bottom:72px;display:flex;flex-direction:column;gap:24px"><div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between"><div><div class="eb">Demo</div><h1 style="font-size:clamp(36px,5vw,60px)">Demo editing ${eml('tool', 1)}</h1><p class="mut" style="margin-top:8px">Demo only, not included on live sites. Edits update this preview and are saved in this browser.</p></div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="sm" data-a="go" data-v="home">Preview site</button><button class="sm d" data-a="reset">Reset to defaults</button></div></div><div style="display:flex;flex-wrap:wrap;gap:8px">${[['content', 'Homepage & contact'], ['services', 'Services'], ['gallery', 'Gallery'], ['reviews', 'Testimonials']].map((t) => `<button class="sm ${S.tab === t[0] ? 'on' : ''}" data-a="tab" data-v="${t[0]}">${t[1]}</button>`).join('')}</div>${body}</div>`;
+};
+
+/* ---------- guide pop-up (demo only) ---------- */
+const modal = () => {
+  const n = S.tour, tot = TOUR.length + 1, last = n === tot, t = TOUR[n - 1];
+  const inner = last ? `<h2>Your simple offer</h2><div style="background:#0b0b0f;color:#fff;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><div style="font-size:18px;font-weight:600">${OFFER.site.name}</div><div style="font-size:38px;font-weight:700;color:#ffd23f">${OFFER.site.price}</div></div><div style="color:#c9c9d1;font-size:15px">${OFFER.site.note}</div>${OFFER.site.items.map((i) => `<div>✓ ${i}</div>`).join('')}</div>
+<div style="font-size:13px;font-weight:700;letter-spacing:.1em;color:#5b5b66;text-transform:uppercase;margin-bottom:-6px">Other add-ons</div><div style="border:2px solid #0b0b0f;border-radius:18px;padding:6px 22px">${OFFER.extras.map((x, i) => `<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;${i < OFFER.extras.length - 1 ? 'border-bottom:1.5px solid #dcdad3' : ''}"><div><div style="font-weight:600;font-size:17px">${x[0]}</div><div style="color:#4a4a55;font-size:14px">${x[1]}</div></div><div style="font-size:22px;font-weight:700;text-align:right;white-space:nowrap">${x[2]} <span style="font-size:13px;font-weight:500;color:#4a4a55">${x[3]}</span></div></div>`).join('')}</div>${OFFER.notes.map((x) => `<p style="font-size:14px;line-height:1.5;color:#4a4a55;text-align:center">${x}</p>`).join('')}<p style="font-size:16px;font-weight:600;text-align:center">${OFFER.next}</p>`
+    : `<h2>${t[0]}</h2><p style="font-size:17px;line-height:1.55;color:#4a4a55">${t[1]}</p>${t[2].map((p) => `<div class="pt"><span aria-hidden="true" style="flex:0 0 26px;height:26px;border-radius:50%;background:#ffd23f;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700">✓</span>${p}</div>`).join('')}`;
+  return `<div class="modal" role="dialog" aria-modal="true" aria-label="Site guide"><div class="mb"><div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:13px;font-weight:700;letter-spacing:.1em;color:#5b5b66">STEP ${n} OF ${tot}</div><button data-a="close" aria-label="Close guide" style="min-height:44px;min-width:44px;border:0;background:none;font-size:28px">×</button></div><div style="display:flex;gap:6px">${Array.from({ length: tot }, (_, k) => `<span style="flex:1;height:5px;border-radius:3px;background:${k < n ? '#0b0b0f' : '#dcdad3'}"></span>`).join('')}</div>${inner}
+<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><button data-a="back" style="min-height:52px;padding:0 24px;border-radius:999px;border:2px solid #0b0b0f;background:#fff;color:#0b0b0f;font-weight:600;font-size:16px;visibility:${n > 1 ? 'visible' : 'hidden'}">Back</button><button data-a="next" style="min-height:52px;padding:0 32px;border-radius:999px;border:0;background:#0b0b0f;color:#fff;font-weight:600;font-size:16px">${last ? 'Explore the site' : 'Next'}</button></div><button data-a="terms" style="align-self:center;min-height:44px;background:none;border:0;color:#6b6b76;font-size:13px;text-decoration:underline">${esc(cfg.bizName)} terms &amp; conditions</button><a href="${MECHELAB_URL}" target="_blank" rel="noopener" style="align-self:center;color:#6b6b76;font-size:13px;text-decoration:underline">About ${esc(cfg.bizName)} ↗</a></div></div>`;
+};
+
+/* ---------- shell + render ---------- */
+function render() {
+  const nav = [['home', 'Home'], ['services', 'Services'], ['about', 'About'], ['contact', 'Contact']];
+  const bar = DEMO_MODE ? `<div class="bar"><span>${PREVIEW_LABEL}</span>${[['a', 'Studio'], ['b', 'Sharp'], ['c', 'Trusted']].map((p) => `<button class="${S.tpl === p[0] ? 'on' : ''}" data-a="tpl" data-v="${p[0]}">${p[1]}</button>`).join('')}<button class="g" data-a="tour">Guide &amp; pricing</button></div>` : '';
+  const page = { home, contact, terms, admin }[S.view]();
+  $('#root').dataset.t = S.tpl;
+  $('#root').innerHTML = `${bar}<div class="w" style="padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px"><button data-a="go" data-v="home" style="background:none;border:0;color:var(--ink);padding:0;display:flex;align-items:center;gap:10px;min-height:44px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34"><rect width="34" height="34" rx="11" fill="#0b0b0f" stroke="#2e2e38"/><circle cx="17" cy="17" r="9" fill="none" stroke="#ffd23f" stroke-width="4"/><circle cx="17" cy="17" r="2.5" fill="#ffd23f"/></svg><span style="font-size:20px;font-weight:700;letter-spacing:-.03em">${esc(cfg.name)}</span></button><div style="display:flex;flex-wrap:wrap;gap:2px">${nav.map((n) => `<button class="nav ${S.view === n[0] ? 'on' : ''}" data-a="${n[0] === 'services' || n[0] === 'about' ? 'jump' : 'go'}" data-v="${n[0]}">${n[1]}</button>`).join('')}${DEMO_MODE ? `<button class="nav ${S.view === 'admin' ? 'on' : ''}" style="font-style:italic" data-a="go" data-v="admin">Demo Editing tool</button>` : ''}</div></div>
+${page}${S.view === 'home' && !S.tour ? `<button class="pill fab" data-a="go" data-v="contact">${esc(cfg.cta)}</button>` : ''}
+<div style="margin-top:auto;border-top:1.5px solid var(--line)"><div class="w mut" style="padding-top:28px;padding-bottom:110px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;font-size:14px"><span>© ${esc(cfg.name)} · ${esc(cfg.address)}</span>${SHOW_CREDIT ? `<a href="${MECHELAB_URL}" target="_blank" rel="noopener" style="text-decoration:underline">Website by ${esc(cfg.bizName)}</a>` : ''}<div style="display:flex;flex-wrap:wrap;gap:8px">${socials()}</div><button data-a="go" data-v="terms" style="background:none;border:0;color:var(--mut);text-decoration:underline;min-height:44px;font-size:14px">${esc(cfg.bizName)} terms</button></div></div>${S.tour ? modal() : ''}`;
+}
+const $ = (s) => document.querySelector(s);
+const scrollTo0 = () => window.scrollTo(0, 0);
+const jump = (id) => { const run = () => { const e = document.getElementById(id); if (e) e.scrollIntoView({ behavior: 'smooth' }); }; if (S.view !== 'home') { S.view = 'home'; render(); setTimeout(run, 60); } else run(); };
+const setPath = (p, v) => { const k = p.split('.'); let o = cfg; k.slice(0, -1).forEach((x) => (o = o[x])); o[k[k.length - 1]] = v; };
+
+const ACT = {
+  tpl: (v) => { S.tpl = v; render(); }, tour: () => { S.tour = 1; render(); }, close: () => { S.tour = 0; render(); },
+  next: () => { S.tour = S.tour < TOUR.length + 1 ? S.tour + 1 : 0; render(); }, back: () => { S.tour = Math.max(1, S.tour - 1); render(); },
+  terms: () => { S.tour = 0; S.view = 'terms'; render(); scrollTo0(); },
+  go: (v) => { S.view = v; S.sent = false; render(); scrollTo0(); }, jump: (v) => jump(v),
+  toggle: (v) => { S.open = S.open === +v ? -1 : +v; render(); }, tab: (v) => { S.tab = v; render(); },
+  pick: (v) => { S.form.service = v; render(); }, again: () => { S.sent = false; render(); },
+  add: (v) => { cfg[v].push(v === 'services' ? ['New service', 'Describe this service.'] : v === 'gallery' ? ['New project', 'Tag'] : ['New testimonial.', 'Client name']); save(); render(); },
+  del: (v) => { const [k, i] = v.split('.'); cfg[k].splice(+i, 1); save(); render(); },
+  reset: () => { cfg = JSON.parse(JSON.stringify(SITE)); save(); render(); },
+  submit: () => {
+    const f = S.form;
+    if (!f.name.trim() || !f.phone.trim()) { S.err = true; render(); return; }
+    S.err = false;
+    // Quote requests are emailed via the form service set in FORM_ENDPOINT (top of file). Without it, this is a demo.
+    if (FORM_ENDPOINT) fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(f) }).catch(() => {});
+    S.sent = true; S.form = { name: '', phone: '', email: '', service: '', msg: '' }; render();
+  }
+};
+document.addEventListener('click', (e) => { const b = e.target.closest('[data-a]'); if (b && ACT[b.dataset.a]) ACT[b.dataset.a](b.dataset.v); });
+document.addEventListener('input', (e) => {
+  const t = e.target;
+  if (t.dataset.fm) { S.form[t.dataset.fm] = t.value; S.err = false; }      // quote form fields
+  if (t.dataset.k) { setPath(t.dataset.k, t.value); save(); }                 // demo editing tool fields
+});
+render();
+</script>
+</body>
+</html>
